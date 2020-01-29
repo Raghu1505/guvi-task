@@ -1,11 +1,15 @@
 import random
-r = random.randrange(1, 10)
+r = random.randrange(1, 100)
+print("Guess the number within 10 ATTEMPTS")
 guess = int(input("Please enter your guess (1-10): "))
-while( guess!=r):
+for i in range(9):
         if guess < r:
                 print("Your guess is too low")
                 guess = int(input("Please enter your guess: "))
         elif guess>r:
                 print("Your guess is too high")
                 guess = int(input("Please enter your guess: "))
-print("Hit")
+        else:
+                print("HIt")
+                break
+print("Game over")
