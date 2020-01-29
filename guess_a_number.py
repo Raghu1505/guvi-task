@@ -10,6 +10,6 @@ for i in range(9):
                 print("Your guess is too high")
                 guess = int(input("Please enter your guess: "))
         else:
-                print("HIt")
+                print("You win!!!")
                 break
 print("Game over")
